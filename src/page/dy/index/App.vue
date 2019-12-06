@@ -1,5 +1,14 @@
 <template>
   <div id="dy">
+     <div class="header">
+       <nav class="container">
+           <div class="logo"></div>
+       </nav>
+     </div>
+     <div class="advertisement">
+        <div class="container">
+       </div>
+       </div> 
      <div class="container">
        <div class="row">
         <div class="left-body">
@@ -16,10 +25,13 @@
           </article>
           </div>
         <div class="right-side">
-          <ul>
-            <li>抖音蓝v代理商，蓝V认证,代理需要钱吗?</li>
-            <li>抖音蓝v代理商，蓝V认证,代理需要钱吗?</li>
-          </ul>
+          <div class="card-body">
+            <ul>
+              <li>抖音蓝v代理商，蓝V认证,代理需要钱吗?</li>
+              <li>抖音蓝v代理商，蓝V认证,代理需要钱吗?</li>
+            </ul>
+          </div>
+          
         </div>
        </div>
      </div>
