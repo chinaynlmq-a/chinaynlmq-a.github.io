@@ -1,0 +1,36 @@
+.container{
+  width: 1140px;
+  padding-right: 12px;
+  padding-left: 12px;
+  // margin-right: auto;
+  // margin-left: auto;
+   margin: 0 auto;
+   position: relative;
+}
+.row{
+  display:flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.left-body{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 100%;
+    // flex: 0 0 100%;
+    width: 0;
+    min-width: 0;
+    article{
+       padding: 160/@px2rem;
+       background:#fff;
+    }
+}
+.right-side{
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    position: relative;
+}

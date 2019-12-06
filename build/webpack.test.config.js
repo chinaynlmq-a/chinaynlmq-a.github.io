@@ -48,7 +48,7 @@ let testConfig = {
     filename: 'static/js/[name].[hash:8].js',
     chunkFilename: 'static/lib/[name].[hash:8].js',
     hashDigestLength: 10,
-    path: resolve('dist/'),
+    path: resolve('dist'),
     publicPath
   },
   resolve: {

@@ -66,7 +66,7 @@ let devConfig = {
     publicPath: `/${publicPath}/`,
     host: myIp,
     compress: true,
-    port: 1443,
+    port: 1442,
     hot: true,
     // 代理地址配置
     proxy: {

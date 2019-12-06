@@ -41,7 +41,7 @@ let prdConfig = {
     chunkFilename: 'static/lib/[name].[hash:8].js',
     hashDigestLength: 10,
     // path: resolve('dist/' + packageJson.name),
-    path: resolve('dist'),
+    path: resolve('docs'),
     publicPath
   },
   resolve: {

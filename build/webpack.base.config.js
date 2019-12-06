@@ -67,7 +67,7 @@ let getBasicConfig = () => {
   });
   plugins.push(
     // 打包目标目录清理插件
-    new CleanWebpackPlugin('dist/*', {
+    new CleanWebpackPlugin('docs/*', {
       root: path.resolve(__dirname, '..'),
       // false 全部删除 @true 覆盖不删除 // 启用删除文件
       dry: false
