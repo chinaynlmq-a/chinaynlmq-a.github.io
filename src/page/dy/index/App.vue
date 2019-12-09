@@ -27,14 +27,17 @@
         <div class="right-side">
           <div class="card-body">
             <ul>
-              <li>抖音蓝v代理商，蓝V认证,代理需要钱吗?</li>
-              <li>抖音蓝v代理商，蓝V认证,代理需要钱吗?</li>
+              <li>抖音蓝v代理商，代理需要钱吗?</li>
+              <li>抖音蓝v代理商，代理需要钱吗?</li>
             </ul>
           </div>
           
         </div>
        </div>
      </div>
+     <footer class="footer">
+       <nav class="container"><span class="copyright">Copyright © 2019-2029 chinaynlmq-a 版权所有</span></nav>
+     </footer>
   </div>
 </template>
 
