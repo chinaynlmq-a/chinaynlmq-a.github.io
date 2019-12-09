@@ -8,7 +8,7 @@
        </div> 
      <div class="chirld-nav">
        <div class="container">
-          <a href="/index.html">首页</a>
+          <a href="/blog/index.html">首页</a>
           <span>>></span>
           <span>博文</span> 
        </div>

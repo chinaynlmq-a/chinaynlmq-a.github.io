@@ -2,8 +2,8 @@
  <div class="header">
        <nav class="container">
            <div class="logo"></div>
-           <a href="/index.html">首页</a>
-           <a href="/dy/index.html">博文</a>
+           <a href="/blog/index.html">首页</a>
+           <a href="/blog/dy/index.html">博文</a>
        </nav>
      </div>
 </template>
