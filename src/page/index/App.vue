@@ -1,6 +1,6 @@
 <template>
   <div id="bdbox">
-    我的博客首页测试
+    我的博客首页
     <a href="./dy/index.html">抖音</a>
   </div>
 </template>
