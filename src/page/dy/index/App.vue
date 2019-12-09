@@ -1,10 +1,6 @@
 <template>
   <div id="dy">
-     <div class="header">
-       <nav class="container">
-           <div class="logo"></div>
-       </nav>
-     </div>
+    <headers></headers>
      <div class="advertisement">
         <div class="container">
        </div>
@@ -42,9 +38,13 @@
 </template>
 
 <script>
+import headers from '../../../components/header/index.vue';
 export default {
   data () {
     return {};
+  },
+  components: {
+    headers
   },
   created: function () {
   },
