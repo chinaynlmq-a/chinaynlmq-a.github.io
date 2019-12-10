@@ -7,7 +7,7 @@
 </template>
 <script>
 export default {
-  name: 'headers',
+  name: 'AboutMe',
   data () {
     return {};
   },

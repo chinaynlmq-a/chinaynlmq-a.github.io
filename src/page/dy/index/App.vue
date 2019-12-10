@@ -1,11 +1,14 @@
 <template>
   <div id="dy">
     <headers></headers>
-     <div class="advertisement">
+     <!-- <div class="advertisement">
         <div class="container">
           <div class="adv"></div>
        </div>
-       </div> 
+       </div>  -->
+       <Advertis>
+         <div class="adv"></div>
+       </Advertis>
      <div class="chirld-nav">
        <div class="container">
           <a href="/blog/index.html">首页</a>
@@ -15,7 +18,7 @@
       </div>  
      <div class="container">
        <div class="row">
-        <div class="left-body">
+        <LeftBodys>
           <article>
             <div class="article-title">抖音蓝v代理商，蓝V认证,代理需要钱吗?</div>
             <div class="article-title-sub">
@@ -30,10 +33,10 @@
               <h4>最后</h4>
               <p>我个人认为，目前这个代理蓝V项目是0成本。0风险，高收入的兼职行业吧。这个是真的。一天成交一单一个月下来也是不少的收入，生活如此艰难。多比别人多点渠道多点收入总是好的。</p>
           </article>
-          </div>
+        </LeftBodys>
         <div class="right-side">
           <div class="card-body">
-              <about></about>
+              <AboutMe></AboutMe>
           </div>
           <div class="card-body">
             <ul>
@@ -45,22 +48,22 @@
         </div>
        </div>
      </div>
-     <footer class="footer">
-       <nav class="container"><span class="copyright">Copyright © 2019-2029 chinaynlmq-a 版权所有</span></nav>
-     </footer>
+     <Footers></Footers>
   </div>
 </template>
 
 <script>
-import headers from '../../../components/header/index.vue';
-import about from '../../../components/aboutme/index';
+import { headers, Advertis, AboutMe, Footers, LeftBodys } from '../../../components/index';
 export default {
   data () {
     return {};
   },
   components: {
     headers,
-    about
+    AboutMe,
+    Advertis,
+    Footers,
+    LeftBodys
   },
   created: function () {
   },
