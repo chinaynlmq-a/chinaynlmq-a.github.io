@@ -1,11 +1,7 @@
-/**
- * @author licong
- * @date 2019-04-02
- * @Description: 公用请求封装
- */
+
 import axios from 'axios';
 import qs from 'qs';
-import {Auth} from '@essence/tifa';
+import {Auth} from '@';
 import untilsObj from './utils';
 import {showLoading, closeLoading} from './utils/httploading';
 
@@ -13,10 +9,10 @@ class HttpClient {
   constructor (requestObj, vueContent) {
     this.curVueContent = vueContent;
     this.requestObj = requestObj;
-    this.LogInJyUrl = '/mobileHall/unified/login.do'; // 登录交易权限Url
+    this.LogInJyUrl = ''; // 登录交易权限Url
     // 登录E帐通权限Url /scoreMarket/eShop/appNewLogin.do
     this.logInEztUrl = '';
-    this.generateTokenUrl = '/mobileHall/user/h5/generateToken.do'; // 登录后获取token
+    this.generateTokenUrl = ''; // 登录后获取token
     this.sendQuery();
   }
 
@@ -329,11 +325,11 @@ class HttpClient {
       getToken(res);
     };
     if (requestToken === 0) {
-      untilsObj.changeURL('http://action:57600/?callback=getToken&&skipLogin=yes');
+      untilsObj.changeURL('');
     } else if (requestToken === 1) {
       // e帐通登录失效,强刷token
       showLoading(this.curVueContent); // 强刷前手动加上loading,防止强刷过程中用户反复点击，loading中断
-      untilsObj.changeURL('http://action:57600/?callback=loseLogIn&&skipLogin=yes&&requestToken=yes');
+      untilsObj.changeURL('');
     }
   }
 
@@ -366,7 +362,7 @@ class HttpClient {
           this.getJyToken();
         }
       };
-      untilsObj.changeURL('http://action:57615/?callback=refreshBack');
+      untilsObj.changeURL('');
       return;
     }
 
@@ -382,16 +378,16 @@ class HttpClient {
         window.loginBack = () => {
           this.getJyToken();
         };
-        untilsObj.changeURL('http://action:10090/?loginkind=1&&jsfuncname=loginBack()');
+        untilsObj.changeURL('');
       }
       // 下面两种情况不做处理
       // 如果 （isJCTradeLogin == yes && token为空）---->异常状况不作处理
       // 如果 （isJCTradeLogin == no && token为空） ----->组合登录界面取消登录回调
     };
-    let getTokenUrl = 'http://action:57605/?callback=getTimeOutToken&&skipLogin=yes';
+    let getTokenUrl = '';
     if (getJyType === 'requestToken') {
       // 强刷token获取token的中卓链接
-      getTokenUrl = 'http://action:57605/?callback=getTimeOutToken&&requestToken=yes&&skipLogin=yes';
+      getTokenUrl = '';
     }
     untilsObj.changeURL(getTokenUrl);
   }
@@ -530,7 +526,7 @@ class HttpClient {
     }).then(res => {
       if (res) {
         // 点击确定 按钮的回调
-        window.location.replace('/logIn.html?backUrl=' + encodeURIComponent(location.href));
+        window.location.replace('/' + encodeURIComponent(location.href));
       } else {
         // 点击取消按钮的回调
         window.history.go(-1);
