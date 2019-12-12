@@ -12,7 +12,9 @@
      <div class="container">
        <div class="row">
         <LeftBodys>
-          <div class="articlelist">sss</div>
+          <div class="articlelist">
+             <h3></h3>
+          </div>
           <div class="articlelist">sss</div>
         </LeftBodys>
         <div class="right-side">

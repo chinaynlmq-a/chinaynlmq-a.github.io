@@ -5,7 +5,7 @@ const MinCssExtractPlugin = require('mini-css-extract-plugin'); // 将CSS提取�
 const baseconfig = require('./webpack.base.config');
 let path = require('path');
 // const packageJson = require('../package.json');
-const publicPath = `https://chinaynlmq-a.github.io/blog/`;
+const publicPath = `https://chinaynlmq-a.github.io/`;
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir);
