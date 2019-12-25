@@ -20,15 +20,15 @@ export default {
 </script>
 <style  lang='less'>
 .header{
-  height: 300/@px2rem;
+  height: 90/@px2rem;
   overflow: hidden;
   background: #fff;
   border-bottom: 1px solid #ebebeb;
   box-shadow: 0 1px 1px rgba(0,0,0,.03);
-  padding-top: 30/@px2rem;
+  padding-top: 9/@px2rem;
   .logo{
-    width: 240/@px2rem;
-    height: 240/@px2rem;
+    width: 76/@px2rem;
+    height: 76/@px2rem;
     background: url('./logo.jpeg') 0 0 no-repeat;
     background-size: 100% 100%;
     display: inline-block;
@@ -36,8 +36,9 @@ export default {
   }
   a{
     display: inline-block;
-    padding: 0 90/@px2rem;
-    color: #000
+    padding: 0 20/@px2rem;
+    color: #000;
+    font-size: 24/@px2rem;
   }
 }
 </style>

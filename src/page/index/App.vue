@@ -1,5 +1,5 @@
 <template>
-  <div id="dy">
+  <div id="dy" :class="this.mobile() ? 'mobile':''">
     <headers></headers>
      <!-- <div class="advertisement">
         <div class="container">
@@ -18,7 +18,7 @@
           </div>
           <div class="articlelist">
             <h3>消费者行为分析</h3>
-            <p><a href="/dy/consumer.html" title="消费者行为分析">消费者行为理论也称为效用理论，它是研究一定在收入和价格条件下，消费者为获得最大满足对各种商品作出的选择方式，即考察消费者选择和消费者行为的基本原则；通常有两种方法进行分析：一种是以基数效用论为基础的边际效用分析，另一种是以序数效用论为基础的无差异曲线分析</a></p>
+            <p><a href="/dy/consumer.html" title="消费者行为分析">消费者行为理论也称为效用理论，它是研究一定在收入和价格条件下，消费者为获得最大满足对各种商品作出的选择方式，即考察消费者选择和消费者行为的基本原则；通常有两种方法进行分析：一种是以基数效用论为基础的边际效用分析，另一种是以序数效用论为基础的无差异曲线分析。</a></p>
           </div>
         </LeftBodys>
         <div class="right-side">
@@ -48,6 +48,9 @@ export default {
   created: function () {
   },
   methods: {
+    mobile () { 
+        return !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/);
+    }
   },
   mounted: function () {
   }

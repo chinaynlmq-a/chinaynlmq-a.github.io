@@ -20,8 +20,8 @@ export default {
 <style  lang='less'>
 .advertisement{
   background: #fff;
-  height: 450/@px2rem;
-  margin-bottom: 100/@px2rem;
+  height: 136/@px2rem;
+  margin-bottom: 50/@px2rem;
   overflow: hidden;
 }
 </style>

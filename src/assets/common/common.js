@@ -3,7 +3,6 @@ class Common {
     this.init();
   }
   init () {
-    // !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/)
     console.log('我运行了common里面的方法');
   }
 }

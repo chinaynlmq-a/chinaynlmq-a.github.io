@@ -20,7 +20,7 @@ export default {
    .aboutme{
      .weixin-bg{
        background: url('./weixin.jpg');
-       height: 1000/@px2rem;
+       height: 324/@px2rem;
        background-size:100% 100%;
      }
    }
